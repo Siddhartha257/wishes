@@ -527,8 +527,9 @@
         .catalog-container {
             display: flex;
             gap: 24px;
-            flex-wrap: wrap;
             justify-content: center;
+            width: 100%;
+            padding: 0 16px;
         }
 
         .catalog-card {
@@ -559,6 +560,20 @@
             letter-spacing: 0.15em;
             font-family: 'Cinzel', serif;
             color: var(--gold-lt);
+            text-align: center;
+        }
+
+        @media (max-width: 380px) {
+            .catalog-container {
+                gap: 16px;
+            }
+            .catalog-card {
+                width: 135px;
+                height: 180px;
+            }
+            .catalog-title {
+                font-size: 0.85rem;
+            }
         }
 
 
